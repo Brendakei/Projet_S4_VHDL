@@ -58,6 +58,7 @@ proc checkRequiredFiles { origin_dir} {
    [file normalize "$origin_dir/../ipRepo/tmds_v1_0"] \
    [file normalize "$origin_dir/../ipRepo/atelier4"] \
    [file normalize "$origin_dir/../ipRepo/testPatternGen2"] \
+   [file normalize "$origin_dir/../vivado-library-2020.1"] \
   ]
   foreach ipath $paths {
     if { ![file isdirectory $ipath] } {
@@ -188,7 +189,7 @@ if {[string equal [get_filesets -quiet sources_1] ""]} {
 # Set IP repository paths
 set obj [get_filesets sources_1]
 if { $obj != {} } {
-   set_property "ip_repo_paths" "[file normalize "$origin_dir/../ipRepo/mycolorRegister_1.0"] [file normalize "$origin_dir/../ipRepo/pixelDataToVideoStream_1.0"] [file normalize "$origin_dir/../ipRepo/rgb2dvi"] [file normalize "$origin_dir/../ipRepo/tmds_v1_0"]" $obj
+   set_property "ip_repo_paths" "[file normalize "$origin_dir/../ip_repo/testPatternGen2"] [file normalize "$origin_dir/../ip_repo/mycolorRegister_1.0"] [file normalize "$origin_dir/../ip_repo/pixelDataToVideoStream_1.0"] [file normalize "$origin_dir/../ip_repo/rgb2dvi"] [file normalize "$origin_dir/../ip_repo/tmds_v1_0"] [file normalize "$origin_dir/../vivado-library-2020.1"]" $obj
 
    # Rebuild user ip_repo's index before adding any source files
    update_ip_catalog -rebuild
