@@ -11,7 +11,7 @@ set app_name s4InfoAtelier4
 set workspace C:/Travail/s4InfoAtelier4/GIT/SVN/work/Vitis_workspace
 
 # Paths pour les fichiers sources c/c++/h
-set sourcePath C:/Travail/s4InfoAtelier4/GIT/SVN/vitisProj/s4InfoAtelier4/src
+set sourcePath C:/Travail/s4InfoAtelier4/GIT/SVN/vitisProj/src
 
 # Path pour le fichier .xsa
 set hw C:/Travail/s4InfoAtelier4/GIT/SVN/work/s4InfoAtelier4/atelier4_wrapper.xsa
