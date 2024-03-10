@@ -5,16 +5,16 @@
 #		source D:/ZYBO/Work-2020.2/Ateliers/Atelier3-Git/scripts/vitisProj.tcl
 
 # nom du projet
-set app_name Top_project
+set app_name s4InfoAtelier4
 
 # spécifier le répertoire où placer le projet
-set workspace D:/ZYBO/Work-2020.2/Ateliers/Atelier3-Git/work/Vitis_workspace
+set workspace C:/Travail/s4InfoAtelier4/GIT/SVN/work/Vitis_workspace
 
 # Paths pour les fichiers sources c/c++/h
-set sourcePath D:/ZYBO/Work-2020.2/Ateliers/Atelier3-Git/vitisProj/Top_project/src
+set sourcePath C:/Travail/s4InfoAtelier4/GIT/SVN/vitisProj/src
 
 # Path pour le fichier .xsa
-set hw D:/ZYBO/Work-2020.2/Ateliers/Atelier3-Git/work/LectureADC/Top.xsa
+set hw C:/Travail/s4InfoAtelier4/GIT/SVN/work/s4InfoAtelier4/atelier4_wrapper.xsa
 
 # Créer le workspace
 file delete -force $workspace
